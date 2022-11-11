@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Pelo amor de Deus S.O.S</title>
     <style>
         * {
-            padding: 0;
             margin: 0;
+            padding: 0;
         }
-        #sec {
+        .bloco {
             background-color: black;
+            width: 300px;
             height: 100vh;
-            width: 200px;
-            position: absolute;
         }
-        #art {
-            background-color: black;
+        body > .externo {
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+            background-color: rgba(255, 255, 0, 0.352);
+            width: 500px;
             height: 200px;
-            width: 200px;
-            margin-top: 50%;
-            margin-left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+        }
+        .foto {
+            position: relative;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            
+
         }
     </style>
 </head>
 <body>
-    <section id="sec">
-        <article id="art">
+    <div class="bloco">
+        <img src="images/Perfil.png" alt="" class="foto" >
+    </div>
+    <div class="externo">
 
-        </article>
-    </section>
-    
+    </div>
+</body>
 </html>
