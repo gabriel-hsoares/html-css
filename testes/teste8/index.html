@@ -6,43 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelo amor de Deus S.O.S</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+        :root {
+            --font: 'Poppins';
+        }
+
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        .bloco {
+        .div1 {
             background-color: black;
-            width: 300px;
-            height: 100vh;
-        }
-        body > .externo {
-            position: absolute;
-
-            left: 50%;
-            top: 50%;
-            background-color: rgba(255, 255, 0, 0.352);
-            width: 500px;
-            height: 200px;
-            transform: translate(-50%, -50%);
-            border-radius: 20px;
-        }
-        .foto {
-            position: relative;
-            top: 50%;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 600px;
+            display: block;
             
+            position: relative;
+        }
 
+        .div1 > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .div1 > h1, p {
+            color: white;
+            font-family: var(--font);
+        }
+        .div2 {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .item {
+            position: relative;
+            width: 30%;
+            border: 1px solid black;
+            padding: 20px;
+            height: 150px;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: brown;
+            color: white;
+        }
+        .item p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="bloco">
-        <img src="images/Perfil.png" alt="" class="foto" >
+    <div class="div1">
+        <img src="images/Perfil.png" alt="">
+        <h1>Quem é Gabriel Soares?</h1>
+        <p>Um homem muito bem sucedido que gosta de programar, investimentos e de curtir a vida ao lado daqueles que sempre estiveram ao seu lado.</p>
     </div>
-    <div class="externo">
-
+    <div class="div2">
+        <div class="item"><p>Tudo que você verá aqui é para aparecer no primeiro bloco, portanto, <a href="https://instagram.com/gabrielsoaress" target="_blank">clique aqui</a> para acessar diretamente o Instagram.</p></div>
+        <div class="item"><p>Flamengooo</p></div>
+        <div class="item"><p>Gosta muito de futebol</p></div>
     </div>
 </body>
 </html>
