@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+        :root {
+            --fontepadrao: 'Poppins';
+        }
+        body {
+            font-family: var(--fontepadrao);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            margin: auto;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+        .h1mod {
+            background-color: lightgray;
+        }
+        .nota {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos começar!</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="h1mod" scope="col" rowspan="2">Área</th>
+                <th class="h1mod" scope="col" rowspan="2">Disciplinas</th>
+                <th class="h1mod" colspan="2">Notas</th>
+                <th class="h1mod" scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th class="h1mod" scope="col">Nota 1</th>
+                <th class="h1mod" scope="col">Nota 2</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <th class="h1mod" colspan="4" scope="row">Média de Exatas</th>
+                    <th class="h1mod" scope="col">0.0</th>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>História</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <th class="h1mod" colspan="4" scope="row">Média de Humanas</th>
+                    <th class="h1mod" scope="col">0.0</th>
+                </tr>
+            </tbody>
+            
+    </table>
+</body>
+</html>
