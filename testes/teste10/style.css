@@ -5,7 +5,7 @@
 }
 
 .item1 {
-    width: 300px;
+    width: 200px;
     height: 300px;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0, 0.514);
 }
@@ -17,22 +17,31 @@
 }
 
 .item2 {
-    width: 300px;
+    width: 200px;
     height: 300px;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0, 0.514);
 }
 
 .item3 {
-    width: 300px;
+    width: 200px;
     height: 300px;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0, 0.514);
+}
+.bordatopa {
+    height: 50%;
+    background-color: red;
+    
+}
+.bordatopa:hover {
+    background-color: black;
+    
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgba(0,0,0,0.365);
+    
     margin-top: 25px;
 }
 
