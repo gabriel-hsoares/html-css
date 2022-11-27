@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando...</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        fieldset {
+            width: 350px;
+            padding: 10px 10px 40px 20px;
+            background-color: green;
+            color: white;
+            border-top: 20px solid orange;
+        }
+        fieldset h1 {
+            color: orange;
+        }
+        .submit {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #btn_enviar {
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+            background-color: orange;
+            border: none;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        #inome, #imail, #itel {
+            padding: 7px;
+        }
+        a {
+            text-decoration: none;
+            color: orange;
+        }
+        .container {
+            background-color: pink;
+            display: flex;
+            flex-direction: row;
+            width: 98vw;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .teste1 {
+            position: relative;
+            margin-top: 330px;
+        }
+        .teste2 {
+            position: relative;
+            right: 10%;
+        }
+        .teste3 {
+            position: relative;
+            margin-top: 350px;
+            left: 20%;
+            text-align: right;
+        }
+        .teste3 > p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando o formulário da LP Beneficium</h1>
+    <div class="container">
+        <div class="teste3">
+            <p>Olá, <br> eu sou o Gabriel Soares.</p>
+        </div>
+        <div class="teste1">
+            <img src="Perfil.png" alt="Miel">
+        </div>
+        <div class="teste2">
+            <fieldset>
+                <form action="cadastro.php" autocomplete="off" method="post">
+                    <h1>Faça aqui o seu cadastro</h1>
+                    <p>
+                        <label for="inome">Nome*</label><br>
+                        <input type="text" name="nome" id="inome" required minlength="5" maxlength="30" size="30">
+                    </p>
+                    <p>
+                        <label for="imail">Email*</label><br>
+                        <input type="email" name="email" id="imail" required size="30" maxlength="40">
+                    </p>
+                    <p>
+                        <label for="itel">Telefone*</label><br>
+                        <input type="tel" name="tel" id="itel" required placeholder="(XX) X XXXX-XXXX" size="30" maxlength="16">
+                    </p>
+                    <br>
+                    <p>
+                        <input type="checkbox" name="termo" id="itermo" required>
+                        <label for="itermo">Li e aceito os <strong><a href="https://policies.google.com/terms?hl=pt-BR" target="_blank">termos e condições de uso*</a></strong>.</label>
+                    </p>
+                    <div class="submit">
+                        <input id="btn_enviar" type="submit" value="Quero receber a tabela">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+
+        
+
+    </div>
+</body>
+</html>
