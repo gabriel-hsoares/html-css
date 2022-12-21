@@ -9,24 +9,51 @@ body {
 }
 
 #quadro {
-    width: 80vw;
+    width: auto;
+    max-width: 80%;
     margin: auto;
+    margin-top: 25%;
     padding: 10px;
+    background-color: bisque;
+    border-radius: 10px 3px;
 }
 
 #quadro h1 {
+    margin: auto;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1em;
+    width: auto;
+    font-weight: normal;
+}
+
+#quadro h5 {
+    margin: auto;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .6em;
+    width: auto;
 }
 
 #procmax {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #procmax input {
     width: 150px;
+    margin: auto;
     margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
 }
 
+#calc {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: azure;
+    color: black;
+}

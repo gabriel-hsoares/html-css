@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Treinando</title>
+    <title>Algoritmo  | Banqueiro</title>
 </head>
 <body>
     <div id="quadro">
-        <h1>Qual o número mínimo de recursos para que não haja impasse?</h1>
+        <h1>Impasse | Algoritmo do banqueiro</h1>
+        <h5>Seu sistema está livre de impasse? Calcule!</h5>
         <div id="procmax">
-            <label for="processos">Número de processos</label>
-            <input type="number" name="processos" id="iprocess" max="26">
-            <label for="maximo ">Máximo</label>
+            <label for="processos">N° de processos</label>
+            <input type="number" name="processos" id="iprocess" min="1">
+            <label for="recursos">Recursos</label>
+            <input type="number" name="recursos" id="irec">
+            <label for="maximo">Máximo</label>
             <input type="number" name="maximo" id="imax">
-            <input type="submit" value="Calcular" onclick="calcular()">
+            <input type="submit" id="calc" value="Calcular" onclick="calcular()">
             <br>
             <span></span>
         </div>
