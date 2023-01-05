@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+p {
+    text-align: justify;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+p:first-of-type {
+    background-color: blue;
+}
